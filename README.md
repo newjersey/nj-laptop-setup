@@ -4,7 +4,9 @@ This project automates the process of setting up a new NJ laptop. This was inspi
 
 ## Getting Started
 
-Open Terminal and run the following commands:
+Open Terminal and run the following commands.
+
+**NOTE**: If this is your first time using git on your machine, then MacOS will prompt you to download and install command line developer tools. Click "Install" on the popup to proceed.
 
 ```sh
 mkdir -p ~/workspace
