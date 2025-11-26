@@ -3,11 +3,6 @@
 # Fail immediately if any errors occur
 set -e
 
-# echo "Caching password..."
-# sudo -K
-# sudo true;
-# clear
-
 MY_DIR="$(dirname "$0")"
 
 source ${MY_DIR}/scripts/homebrew.sh # homebrew needs to be set up first
