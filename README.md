@@ -9,7 +9,7 @@ Open Terminal and run the following commands:
 ```sh
 mkdir -p ~/workspace
 cd ~/workspace
-git clone https://github.com/aloverso/workstation-setup.git
+git clone https://github.com/newjersey/nj-laptop-setup.git
 cd workstation-setup
 ./setup.sh
 ```
