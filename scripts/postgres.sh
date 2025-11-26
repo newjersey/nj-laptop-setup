@@ -1,2 +1,2 @@
 brew install postgresql@18
-brew services start postgresql
+brew services run postgresql@18
