@@ -1,4 +1,4 @@
-# Workstation Setup
+# NJ Laptop Setup
 
 This project automates the process of setting up a new NJ laptop. This was inspired and adapted from the now-outdated defunct [Pivotal Workstation setup script](https://github.com/pivotal/workstation-setup)
 
