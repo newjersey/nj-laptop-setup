@@ -1,6 +1,6 @@
 # NJ Laptop Setup
 
-This project automates the process of setting up a new NJ laptop. This was inspired and adapted from the now-outdated defunct [Pivotal Workstation setup script](https://github.com/pivotal/workstation-setup)
+This project automates the process of setting up a new NJ laptop. This is based on and inspired by similar scripts at [18F](https://github.com/18F/laptop), [Pivotal](https://github.com/pivotal/workstation-setup), and [Thoughtbot](https://github.com/thoughtbot/laptop).
 
 ## Getting Started
 
@@ -15,6 +15,12 @@ git clone https://github.com/newjersey/nj-laptop-setup.git
 cd workstation-setup
 ./setup.sh
 ```
+
+## Opinionated vs Custom
+
+This script is fairly opinionated by default, so that developers who don't want to do much custom work can have a sensible setup out-of-the-box. Developers who care more about a custom workflow can feel free to make changes to the setup script before running.
+
+That said, some of the development setup components are intentionally meant to be consistent across machines and projects. 
 
 ## Details
 
