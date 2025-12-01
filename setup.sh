@@ -5,23 +5,24 @@ set -e
 
 MY_DIR="$(dirname "$0")"
 
-source ${MY_DIR}/scripts/homebrew.sh # homebrew needs to be set up first
+# homebrew needs to be set up first
+source ${MY_DIR}/scripts/shared/homebrew.sh
 
-# applications
-source ${MY_DIR}/scripts/applications.sh
+# applications & unix
+source ${MY_DIR}/scripts/shared/applications.sh
+source ${MY_DIR}/scripts/shared/unix.sh
 
 # configurations and preferences
-source ${MY_DIR}/scripts/unix.sh
-source ${MY_DIR}/scripts/config-custom-zsh.sh # comment this out if you want to configure your own zsh
-source ${MY_DIR}/scripts/git-aliases.sh
-source ${MY_DIR}/scripts/config-mac.sh
+source ${MY_DIR}/scripts/customizations/oh-my-zsh.sh
+source ${MY_DIR}/scripts/customizations/git-aliases.sh
+source ${MY_DIR}/scripts/customizations/mac.sh
 
 # languages and tools
-source ${MY_DIR}/scripts/node.sh
-source ${MY_DIR}/scripts/ruby.sh
-source ${MY_DIR}/scripts/python.sh
-source ${MY_DIR}/scripts/postgres.sh
-source ${MY_DIR}/scripts/docker.sh
+source ${MY_DIR}/scripts/shared/node.sh
+source ${MY_DIR}/scripts/shared/ruby.sh
+source ${MY_DIR}/scripts/shared/python.sh
+source ${MY_DIR}/scripts/shared/postgres.sh
+source ${MY_DIR}/scripts/shared/docker.sh
 
 
 echo
