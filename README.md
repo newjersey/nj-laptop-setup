@@ -26,8 +26,9 @@ To this end, the project is divided into two folders:
 
 ## Details
 
-This installs:
+This installs the following
 
+### Shared
 - Homebrew
 - Applications:
   - Rectangle window manager
@@ -36,21 +37,24 @@ This installs:
   - Visual Studio Code
   - Firefox
   - Macdown
-- Oh-My-Zsh
-  - zsh theme config
-  - zsh git prompt config
-- Git Aliases
 - Unix
   - wget
-- Mac config
-  - Autohide the dock
-  - Set text repeat speed
-  - Set finder path display
-  - Remove default icons from dock; add apps instead
 - Languages and tools
   - Node via nvm
   - Ruby via rbenv
   - Postgres
   - Python tools [coming soon]
   - Docker [coming soon]
+ 
+### Customizations
+- Oh-My-Zsh
+  - zsh theme config
+  - zsh git prompt config
+- Mac config
+  - Autohide the dock
+  - Set text repeat speed
+  - Set finder path display
+  - Remove default icons from dock; add apps instead
+- Git Aliases
+
 
