@@ -5,18 +5,18 @@ set +e
 echo
 echo "Installing applications"
 
-# macos window management
-brew install --cask rectangle
-brew install --cask postman
+desired_programs=(
+    "rectangle"
+    "postman"
+    "iterm2"
+    "firefox"
+    "visual-studio-code"
+    "macdown"
+    "wget"
+)
 
-# Terminal
-brew install --cask iterm2
-
-# Browsers
-brew install --cask firefox
-
-# Editors
-brew install --cask visual-studio-code
-brew install --cask macdown
+for program in "${desired_programs[@]}"; do
+    check_and_install_brew $program
+done
 
 set -e

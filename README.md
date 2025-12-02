@@ -30,14 +30,13 @@ This installs the following
 
 ### Shared
 - Homebrew
-- Applications:
+- Applications & Utilities:
   - [Rectangle](https://rectangleapp.com/) window manager
   - [Postman](https://www.postman.com/)
   - [iTerm2](https://iterm2.com/)
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [Firefox](https://www.firefox.com/)
   - [Macdown](https://macdown.uranusjr.com/)
-- Unix
   - [wget](https://www.gnu.org/software/wget/)
 - Languages and tools
   - Node via [nvm](https://github.com/nvm-sh/nvm)

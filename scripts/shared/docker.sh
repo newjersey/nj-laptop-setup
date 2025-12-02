@@ -4,7 +4,9 @@ set +e
 # Docker
 # As of writing `brew install docker` installs Docker CLI, but not Docker Engine
 
-brew install colima docker docker-compose
+check_and_install_brew colima
+check_and_install_brew docker
+check_and_install_brew docker-compose
 
 mkdir ~/.docker
 

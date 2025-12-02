@@ -1,10 +1,13 @@
 echo
 
-if hash brew 2>/dev/null; then
+
+if is_program_installed brew; then
   echo "Homebrew is already installed!"
+  already_installed+=("Homebrew")
 else
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  newly_installed+=("Homebrew")
 fi
 
 echo >> ~/.zprofile
