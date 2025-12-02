@@ -70,3 +70,10 @@ In order to push to GitHub repos using SSH, you will need to:
 
 We have some recommended settings for VSCode that are commonly used on teams:
 - TO FILL IN
+
+## Contributing
+
+Any contributions are welcome via pull request. Some ways to contribute might be:
+- Add to the customization options! Include your own zsh theme or any other quality-of-life tools and config that other developers might benefit from
+- Change or add to the shared setup. This might require more thorough review to confirm that the shared choices are what we want to commit to orienting towards as an office, but opening a suggestion via PR is the best way to start that process
+- Refactor the existing bash scripting process to make it more readable and maintainable
