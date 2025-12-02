@@ -31,23 +31,23 @@ This installs the following
 ### Shared
 - Homebrew
 - Applications:
-  - Rectangle window manager
-  - Postman
-  - ITerm2
-  - Visual Studio Code
-  - Firefox
-  - Macdown
+  - [Rectangle](https://rectangleapp.com/) window manager
+  - [Postman](https://www.postman.com/)
+  - [iTerm2](https://iterm2.com/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Firefox](https://www.firefox.com/)
+  - [Macdown](https://macdown.uranusjr.com/)
 - Unix
-  - wget
+  - [wget](https://www.gnu.org/software/wget/)
 - Languages and tools
-  - Node via nvm
-  - Ruby via rbenv
-  - Postgres
+  - Node via [nvm](https://github.com/nvm-sh/nvm)
+  - Ruby via [rbenv](https://github.com/rbenv/rbenv)
+  - [Postgres](https://www.postgresql.org/)
   - Python tools [coming soon]
   - Docker [coming soon]
  
 ### Customizations
-- Oh-My-Zsh
+- [Oh My Zsh](https://ohmyz.sh/)
   - zsh theme config
   - zsh git prompt config
 - Mac config
@@ -57,4 +57,14 @@ This installs the following
   - Remove default icons from dock; add apps instead
 - Git Aliases
 
+  - [Docker](https://www.docker.com/)
 
+## Additional actions
+
+In order to push to GitHub repos using SSH, you will need to:
+- [Generate an SSH key and add it to ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Add the SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+## VSCode setup
+
+We have some recommended settings for VSCode that are commonly used on teams:
