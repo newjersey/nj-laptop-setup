@@ -24,6 +24,8 @@ To this end, the project is divided into two folders:
 - `/shared` scripts are meant to consistent and to be run unedited to avoid custom tooling setups. 
 - `/customizations` is meant to be a baseline sensible setup. Anything in here is fair game to add, change, or remove before running it on your machine, if you prefer other options.
 
+Additionally, when the script is run, all customizations will be prompted via a yes/no input, allowing the user to opt-in to each of these customizations.
+
 ## Details
 
 This installs the following
@@ -47,8 +49,8 @@ This installs the following
  
 ### Customizations
 - [Oh My Zsh](https://ohmyz.sh/)
-  - zsh theme config
-  - zsh git prompt config
+  - custom zsh theme config
+  - custom zsh git prompt config
 - Mac config
   - Autohide the dock
   - Set text repeat speed
@@ -67,3 +69,4 @@ In order to push to GitHub repos using SSH, you will need to:
 ## VSCode setup
 
 We have some recommended settings for VSCode that are commonly used on teams:
+- TO FILL IN
