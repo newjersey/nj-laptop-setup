@@ -45,7 +45,10 @@ This installs the following
   - Ruby via [rbenv](https://github.com/rbenv/rbenv)
   - [Postgres](https://www.postgresql.org/)
   - Python tools [coming soon]
-  - Docker [coming soon]
+  - [Docker](https://www.docker.com/): we don't use Docker Desktop, we use these open-source Docker tools
+    - Docker CLI: Docker’s OCI-compatible container CLI tools
+    - [Colima](https://github.com/abiosoft/colima): Open source replacement for Docker Engine
+    - [Docker Compose](https://github.com/docker/compose)
  
 ### Customizations
 - [Oh My Zsh](https://ohmyz.sh/)
@@ -57,8 +60,6 @@ This installs the following
   - Set finder path display
   - Remove default icons from dock; add apps instead
 - Git Aliases
-
-  - [Docker](https://www.docker.com/)
 
 ## Additional actions
 
