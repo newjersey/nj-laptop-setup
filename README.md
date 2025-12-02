@@ -1,6 +1,6 @@
 # NJ Laptop Setup
 
-This project automates the process of setting up a new NJ laptop. This is based on and inspired by similar scripts at [18F](https://github.com/18F/laptop), [Pivotal](https://github.com/pivotal/workstation-setup), and [Thoughtbot](https://github.com/thoughtbot/laptop).
+This project automates the process of setting up a new NJ laptop. This is based on and inspired by similar scripts at [18F](https://github.com/18F/laptop), [Pivotal](https://github.com/pivotal/workstation-setup), and [Thoughtbot](https://github.com/thoughtbot/laptop). These are written to be run on a Mac.
 
 ## Getting Started
 
