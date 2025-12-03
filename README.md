@@ -40,10 +40,11 @@ This installs the following
   - [Firefox](https://www.firefox.com/)
   - [Macdown](https://macdown.uranusjr.com/)
   - [wget](https://www.gnu.org/software/wget/)
-- Languages and tools
+- Languages and tools:
   - Node via [nvm](https://github.com/nvm-sh/nvm)
   - Ruby via [rbenv](https://github.com/rbenv/rbenv)
   - [Postgres](https://www.postgresql.org/)
+  - [AWS CLI](https://aws.amazon.com/cli/)
   - Python tools [coming soon]
   - [Docker](https://www.docker.com/): we don't use Docker Desktop, we use these open-source Docker tools
     - Docker CLI: Docker’s OCI-compatible container CLI tools
