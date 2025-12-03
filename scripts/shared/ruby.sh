@@ -4,7 +4,7 @@ echo "Installing Ruby tools and latest Ruby"
 if is_brew_installed "rbenv"; then
     current=$(rbenv version)
     already_installed+=("rbenv: Ruby $current")
-else        
+else
     brew install rbenv
     if [[ $? -ne 0 ]]; then
         failed+=("rbenv")

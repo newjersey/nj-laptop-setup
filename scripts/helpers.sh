@@ -1,5 +1,5 @@
 is_program_installed() {
-    command -v $1 >/dev/null 2>&1;
+    command -v $1 >/dev/null 2>&1
 }
 
 is_brew_installed() {
@@ -8,10 +8,9 @@ is_brew_installed() {
 }
 
 check_and_install_brew() {
-
     if is_brew_installed "$1"; then
         already_installed+=("$1")
-    else        
+    else
         brew install $1
         if [[ $? -ne 0 ]]; then
             failed+=("$1")
