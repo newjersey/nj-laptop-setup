@@ -24,6 +24,7 @@ source ${MY_DIR}/scripts/shared/ruby.sh
 source ${MY_DIR}/scripts/shared/python.sh
 source ${MY_DIR}/scripts/shared/postgres.sh
 source ${MY_DIR}/scripts/shared/docker.sh
+source ${MY_DIR}/scripts/shared/awscli.sh
 
 # configurations and preferences
 
