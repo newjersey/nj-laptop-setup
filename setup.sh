@@ -15,15 +15,13 @@ failed=()
 # homebrew needs to be set up first
 source ${MY_DIR}/scripts/shared/homebrew.sh
 
-# applications & tools
+# applications
 source ${MY_DIR}/scripts/shared/applications.sh
 
-# languages and tools
-source ${MY_DIR}/scripts/shared/node.sh
-source ${MY_DIR}/scripts/shared/ruby.sh
-source ${MY_DIR}/scripts/shared/python.sh
-source ${MY_DIR}/scripts/shared/postgres.sh
-source ${MY_DIR}/scripts/shared/docker.sh
+# remaining languages and tools
+for script in $(ls "${MY_DIR}/scripts/shared/" | grep -v -e "^homebrew.sh" -e "^applications.sh"); do
+    source "${MY_DIR}/scripts/shared/${script}"
+done
 
 # configurations and preferences
 
@@ -54,7 +52,7 @@ prompt_user ${MY_DIR}/scripts/customizations/mac.sh
 echo
 
 echo -e "\nSummary of all installations:"
-echo "=================================="
+echo "============================="
 echo
 echo "(SKIPPED) Already installed packages:"
 echo "-------------------------------------"
@@ -73,7 +71,7 @@ done
 echo
 
 echo "Failed to install packages:"
-echo "--------------------------"
+echo "---------------------------"
 for package in "${failed[@]}"; do
     echo "⛔ $package"
 done
