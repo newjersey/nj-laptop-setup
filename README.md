@@ -18,10 +18,10 @@ cd workstation-setup
 
 ## Opinionated vs Custom
 
-This script is fairly opinionated by default, so that developers who don't want to do much custom work can have a sensible setup out-of-the-box. Developers who care more about a custom workflow can feel free to make changes to the setup script before running. That said, some of the development setup components are intentionally meant to be consistent across machines and projects. 
+This script is fairly opinionated by default, so that developers who don't want to do much custom work can have a sensible setup out-of-the-box. Developers who care more about a custom workflow can feel free to make changes to the setup script before running. That said, some of the development setup components are intentionally meant to be consistent across machines and projects.
 
-To this end, the project is divided into two folders: 
-- `/shared` scripts are meant to consistent and to be run unedited to avoid custom tooling setups. 
+To this end, the project is divided into two folders:
+- `/shared` scripts are meant to consistent and to be run unedited to avoid custom tooling setups.
 - `/customizations` is meant to be a baseline sensible setup. Anything in here is fair game to add, change, or remove before running it on your machine, if you prefer other options.
 
 Additionally, when the script is run, all customizations will be prompted via a yes/no input, allowing the user to opt-in to each of these customizations.
