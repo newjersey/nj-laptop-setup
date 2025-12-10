@@ -5,7 +5,7 @@ set -e
 
 MY_DIR="$(dirname "$0")"
 
-source ${MY_DIR}/scripts/helpers.sh
+source "${MY_DIR}"/scripts/helpers.sh
 
 # track what is installed
 already_installed=()
@@ -13,14 +13,14 @@ newly_installed=()
 failed=()
 
 # homebrew needs to be set up first
-source ${MY_DIR}/scripts/shared/homebrew.sh
+source "${MY_DIR}"/scripts/shared/homebrew.sh
 
 # applications
-source ${MY_DIR}/scripts/shared/applications.sh
+source "${MY_DIR}"/scripts/shared/applications.sh
 
 # remaining languages and tools
 for script in $(ls "${MY_DIR}/scripts/shared/" | grep -v -e "^homebrew.sh" -e "^applications.sh"); do
-    source "${MY_DIR}/scripts/shared/${script}"
+  source "${MY_DIR}/scripts/shared/${script}"
 done
 
 # configurations and preferences
@@ -32,22 +32,22 @@ echo "-----------------------"
 echo
 echo "Do you want to install oh-my-zsh?"
 echo "This is recommended, it makes it easier to customize your zsh terminal."
-prompt_user ${MY_DIR}/scripts/customizations/oh-my-zsh.sh
+prompt_user "${MY_DIR}"/scripts/customizations/oh-my-zsh.sh
+
+echo
+echo "Do you want to enable our recommended oh-my-zsh plugins?"
+echo "This will enable a small subset of the plugins available. See: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins"
+prompt_user "${MY_DIR}"/scripts/customizations/oh-my-zsh-plugins.sh
 
 echo
 echo "Do you want to install anne's oh-my-zsh custom theme?"
-echo "This is optional, it will change your theme colors and terminal prompt style. It will overwrite any existing custom zshrc theme and plugins"
-prompt_user ${MY_DIR}/scripts/customizations/oh-my-zsh-customizations.sh
-
-echo
-echo "Do you want to add custom git aliases?"
-echo "This will allow you to type 'git st' as a status shorthand, for example"
-prompt_user ${MY_DIR}/scripts/customizations/git-aliases.sh
+echo "This is optional, it will change your theme colors and terminal prompt style. It will overwrite any existing custom zshrc theme"
+prompt_user "${MY_DIR}"/scripts/customizations/oh-my-zsh-customizations.sh
 
 echo
 echo "Do you want to configure custom mac preferences?"
 echo "This will auto-hide your dock, fix the dock pins to sensible apps, & set key repeat to be faster"
-prompt_user ${MY_DIR}/scripts/customizations/mac.sh
+prompt_user "${MY_DIR}"/scripts/customizations/mac.sh
 
 echo
 
@@ -57,7 +57,7 @@ echo
 echo "(SKIPPED) Already installed packages:"
 echo "-------------------------------------"
 for package in "${already_installed[@]}"; do
-    echo "⏭️ $package"
+  echo "⏭️ $package"
 done
 
 echo
@@ -65,7 +65,7 @@ echo
 echo "Installed or updated packages:"
 echo "------------------------------"
 for package in "${newly_installed[@]}"; do
-    echo "✅ $package"
+  echo "✅ $package"
 done
 
 echo
@@ -73,7 +73,7 @@ echo
 echo "Failed to install packages:"
 echo "---------------------------"
 for package in "${failed[@]}"; do
-    echo "⛔ $package"
+  echo "⛔ $package"
 done
 
 echo
